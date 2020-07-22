@@ -5,7 +5,9 @@ const startDate = 1595239200560;
 const oneDay = 24 * 60 * 60 * 1000;
 
 async function getCSV() {
-  let gameList = await csvtojson().fromFile("./gamelist.csv");
+
+  // ./ Directory didn't work on github actions:
+  let gameList = await csvtojson().fromFile(__dirname + "/../../gamelist.csv");
   gameList = gameList.map(i => {
     // Make 0 indexed
     i.day = parseInt(i.day) - 1;
