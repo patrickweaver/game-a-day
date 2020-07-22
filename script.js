@@ -19,4 +19,6 @@ function scrollToDate() {
   todayItem.scrollIntoView();
 }
 
-document.getElementById("today-anchor").setAttribute("href", "#" + getTodayId())
+const todayAnchor = document.getElementById("today-anchor");
+todayAnchor.setAttribute("href", "#" + getTodayId());
+todayAnchor.style.display = "inline";
