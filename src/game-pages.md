@@ -21,4 +21,4 @@ I recently stopped working a 9 to 5 job, so I decided to start playing through o
 
 {{ game.short_text}}
 
-[{{game.url}}](game.url)
+[{{game.url}}]({{game.url}})
