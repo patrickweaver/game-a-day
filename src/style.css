@@ -1,0 +1,27 @@
+body {
+  font-family: "Ariel", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#today-anchor {
+  text-align: center;
+  width: 100%;
+}
+
+#game-list {
+  list-style-type:none;
+}
+
+#game-list .item-container {
+
+  border: 1px solid #FFDDFF;
+  border-radius: 5px;
+  padding: 2px 2px 2px 22px;
+  margin: 10px;
+
+}
