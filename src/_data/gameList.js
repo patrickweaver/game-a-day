@@ -1,13 +1,10 @@
-const csvtojson=require("csvtojson/v2");
 const moment = require("moment")
 
 const startDate = 1595239200560;
 const oneDay = 24 * 60 * 60 * 1000;
 
 async function getCSV() {
-
-  // ./ Directory didn't work on github actions:
-  let gameList = await csvtojson().fromFile(__dirname + "/../../gamelist.csv");
+  let gameList = require('../../gameList.json');
   gameList = gameList.map(i => {
     // Make 0 indexed
     i.day = parseInt(i.day) - 1;
