@@ -16,6 +16,7 @@ async function getCSV() {
     const date = new Date(startDate + offset);
     i.date = moment(date).format("MMMM Do YYYY");
     i.idDate = moment(date).format("YYYY-MM-DD");
+    i.oneIndexDay = i.day + 1;
     return i;
   })
   return gameList
